@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+
+#container::after,
+#container::before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.box {
+  padding: 10px;
+  float: left;
+}
+
+.box_img {
+  padding: 10px;
+  box-shadow: 5px 5px 5px #ccc; 
+  border: 1px solid #cccccc;
+}
+
+.box_img img {
+  height: auto;
+  width: 250px;
+}
+
+.box_img,
+.box_img img {
+  border-radius: 5px;
+}
